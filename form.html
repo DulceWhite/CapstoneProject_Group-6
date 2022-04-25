@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <script src="https://kit.fontawesome.com/d58efc4567.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="formStyle.css">
+    <title>Form</title>
+</head>
+<body>
+
+    <div class="header-container">
+        <div class="header">
+            <img src="Img/flood.jpeg" alt="">
+        
+        </div>
+        <div class="breadcrumbs">
+            <ul class="bread">
+                <h1><i class="fa-solid fa-house-tsunami logo"></i> <span>Flood Talk</span></h1>
+                <li><a href="index3.html">Home</a></li>
+                <li><a href="#">Take Action</a></li>
+                <li><a href="#">Tell your story</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="container">
+        <div class="container-content">
+            <h1>Tell your story</h1>
+            <h3>You can help bring awareness to flooding problems in your community.</h3>
+            <p>At Flood Talk we believe that floods are a big problem that needs to be listen to. Floods are a force of nature that can cause hazardous circumstances that could put human life at risk and generate material loses. </p>
+                
+        </div>
+        <form >
+            <label for="name" class="label">Name 
+                <label for="first">First<input type="text" id="first"></label>
+                <label for="last">Last<input type="text" id="last"></label>
+            </label>
+            <label for="phone" class="label">
+                <label for="">Phone<input type="phone" id="phone"></label>
+            </label>
+            <label for="email" class="label">
+                Email<input type="email" id="email">
+            </label>
+            <label for="Zip-Code" class="label">
+                Zip Code<input type="zip" id="zip"></label>
+            </label>
+            <label for="concern" class="label">
+                Tell your story<textarea name="concern" id="concern" cols="30" rows="10"></textarea>
+            </label>
+            <label for="checkbox" class="radioLabel">
+                Would you like to add pictures?
+                <input type="radio" name="user-img" id="yes"> 
+                <label for="radio">Yes</label>
+                <input type="radio" name="user-img" id="no"> 
+                <label for="radio">No</label>
+            </label>
+            <label for="file" class="file">
+                Select a file: 
+                <input type="file" name="file" id="file">
+            </label>
+
+            <p>By submitting this form, you accept <a href="#" class="policy">Flood Talk Privacy Policy.</a></p>
+
+            <input type="submit" name="submit" id="submit" value="Submit">
+        </form>
+
+        <div class="sidebar">
+            <div class="sidebar-menu">
+                <h3>Contribute (take action)</h3>
+                <p>Donate</p>
+                <p>Tell your story</p>
+                <p>Action Pages</p>
+            </div>
+            <div class="sidebar-vision">
+                <h3>What we believe</h3>
+                <p>The mision or 'punch line' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, blanditiis tenetur recusandae sint dolores ut.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer will come form main page and so will the header (navbar and hero area) -->
+
+<script src="formApp.js"></script>
+</body>
+</html>
