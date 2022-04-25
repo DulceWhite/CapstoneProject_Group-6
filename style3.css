@@ -209,6 +209,16 @@ footer{
         flex-direction: column;
     
     }
+    .navbar ul li:hover .submenu-1{
+       
+        top: 60px;
+        background: var(--title);
+        box-shadow: 0 5px 15px rgba(0,0,0,.6);
+        margin-top: 25px;
+        margin-left: 0;
+        transition: all .6s ease-in-out;
+    }
+
 }
 @media (max-width: 680px){
     .mark{
@@ -220,6 +230,7 @@ footer{
        line-height: 2; 
        position: sticky;
        top: 0;
+       
     }
     .mark h1{
         font-size: 35px;
@@ -228,11 +239,20 @@ footer{
     .btn{
         display: none;
     }
+   
+    nav{
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0;
+        transition: all .6s ease-in-out;
+    }
     #menu, #cancel{
         display: block;
-        position: sticky;
-        top: 50px;
-        margin-left: 10px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
         cursor: pointer;
         color: var(--light-blue);
         font-size: 1.3em;
@@ -242,16 +262,9 @@ footer{
     
     #menu{
         opacity: 0;
+        
     }
 
-    nav{
-        display: block;
-        position: fixed;
-        top: 0px;
-        left:10px;
-        right: 0;
-        transition: all .6s ease-in-out;
-    }
    
     /* why check button is not taking the styling */
     #check:checked ~ label #menu{
@@ -289,12 +302,12 @@ footer{
     }
 
     .navbar ul li:hover .submenu-1 ul li{
-        width: 50%;
+        width: 100%;
         padding: 10px;
         margin: auto;
         background: var(--gray-bg);
         border-radius: 0;
-        text-align: center;
+        text-align: left;
         cursor: pointer;
         border-bottom: none;
         transition: all .6s ease;
