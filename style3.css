@@ -11,6 +11,7 @@
     --dark-blue: #293241;
     --light-blue: #e0fbfc;
     --mud-brown: #403d39;
+    --banner: #f4d35e;
 }
 *{
     margin: 0;
@@ -27,7 +28,9 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-   font-family: 'Alfa Slab One', cursive;
+    font-family: 'Alfa Slab One', cursive;
+    width: 80%;
+    margin: auto;
 }
 .mark h1{
     letter-spacing: 3px;
@@ -47,6 +50,7 @@ body{
     margin: 10px;
     color: #fff;
 }
+
 
 .btn:hover{
     color: var(--btn);
@@ -169,20 +173,53 @@ header{
     border: none;
 }
 
-/* sections */
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+/* Showcase */
+.showcase{
     height: 100vh;
+    width: 80%;
+    margin: 30px auto;
+
 }
-.container .img{
-    background-image: url(Img/flood.jpeg);
-    background-size: cover;
-    width: 80vw;
-    height: 60vh;
+.showcase-container{
+    display: flex;
+    flex-wrap: wrap;
+    /* column-gap: 20px; */
+    justify-content: space-evenly;
+    row-gap: 20px;
+
 }
+.imgShowcase{
+    display: flex;
+    align-items: center;
+    
+}
+.imgShowcase img{
+    max-width: 500px;
+}
+.imgShowcase h2{
+    width: 500px;
+    font-size: 70px;
+    background-color: var(--banner);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Vision */
+.vision{
+    width: 100vw;
+    background-color: var(--hover-bg);
+    padding: 50px;
+}
+.vision h3{
+    font-size: 1.6em;
+    width: 80%;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+
+/* sections */
+
 section{
     display: flex;
     height: 100vh;
