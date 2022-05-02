@@ -53,6 +53,7 @@ body{
     color: var(--light-blue);
     position: fixed;
     left: 50px;
+    letter-spacing: 3px;
 
 }
 .bread li{
@@ -76,6 +77,7 @@ body{
     color: var(--btn);
 }
 
+/* Content */
 .container-content{
     display: flex;
     flex-direction: column;
@@ -92,14 +94,15 @@ body{
 }
 .container-content h3{
     color: var(--btn);
-    font-size: 1.4em;
+    font-size: 1.5em;
     font-weight: normal;
 }
 
 .container-content p{
-    font-size: 1.1em;
+    font-size: 1.3em;
 }
 
+/* Form */
 form {
     width: 90vw;
     background-color: var(--light-blue);
@@ -118,6 +121,7 @@ form {
     flex-direction: column;
     padding: 15px;
     justify-content: space-around;
+    font-size: 1.3em;
 
 }
 
@@ -132,13 +136,16 @@ input {
     width: 100%;
     padding:  15px ;
     justify-content: flex-start;
+    font-size: 1.3em;
 }
+
 .file{
     display: flex;
     width: 100%;
     padding:  15px ;
     justify-content: center;
     align-items: center;
+    font-size: 1.3em;
 }
 #file{
     box-shadow: none;
@@ -150,6 +157,8 @@ input {
     border-radius: 5px;
     background-color: var(--title);
     color: #fff;
+    font-size: 1.3em;
+    letter-spacing: 3px;
 }
 
 
