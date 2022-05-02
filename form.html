@@ -31,25 +31,27 @@
         <div class="container-content">
             <h1>Tell your story</h1>
             <h3>You can help bring awareness to flooding problems in your community.</h3>
-            <p>At Flood Talk we believe that floods are a big problem that needs to be listen to. Floods are a force of nature that can cause hazardous circumstances that could put human life at risk and generate material loses. </p>
+            <p>At Flood Talk we believe that floods are a big problem that needs to be listen to. Floods are a force of nature that can cause hazardous circumstances that could put human life at risk and generate material loses. When you share a testimony you help people understand the severity, the suffering, the struggle. We want to listen to you and help turn heads in this direction to promote <b>solutions</b>. </p>
+            <p>If you know somebody has been a victim to flood, please encourage them to share their story in the form below so the areas of high risk can be identified and address.</p>
+           
                 
         </div>
         <form >
             <label for="name" class="label">Name 
-                <label for="first">First<input type="text" id="first"></label>
+                <label for="first">First<input type="text" id="first" required></label>
                 <label for="last">Last<input type="text" id="last"></label>
             </label>
             <label for="phone" class="label">
                 <label for="">Phone<input type="phone" id="phone"></label>
             </label>
-            <label for="email" class="label">
-                Email<input type="email" id="email">
+            <label for="email" class="label" >
+                Email<input type="email" id="email" required>
             </label>
             <label for="Zip-Code" class="label">
-                Zip Code<input type="zip" id="zip"></label>
+                Zip Code<input type="zip" id="zip" required></label>
             </label>
             <label for="concern" class="label">
-                Tell your story<textarea name="concern" id="concern" cols="30" rows="10"></textarea>
+                Tell your story...<textarea name="concern" id="concern" cols="30" rows="10"></textarea>
             </label>
             <label for="checkbox" class="radioLabel">
                 Would you like to add pictures?
@@ -63,7 +65,15 @@
                 <input type="file" name="file" id="file">
             </label>
 
-            <p>By submitting this form, you accept <a href="#" class="policy">Flood Talk Privacy Policy.</a></p>
+            
+            <p>Please confirm that you are giving Flood Talk permission to reprint your story
+                
+                <label for="yes"><input type="radio" name="reprint" id="yes" required checked>Yes</label>
+                <label for="no"><input type="radio" name="reprint" id="no" required>No</label>
+            </p>
+            
+            <p>By submitting this form, you accept <a href="./LegalSpeak/privacy.html" class="policy" target="_blanc">Flood Talk Privacy Policy.</a></p>
+         
 
             <input type="submit" name="submit" id="submit" value="Submit">
         </form>
