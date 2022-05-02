@@ -2,9 +2,6 @@
 
 // Form Inputs
 
-
-
-
 const form = document.querySelector(`form`);
 
 form.addEventListener(`submit`, f => {
@@ -15,3 +12,4 @@ form.addEventListener(`submit`, f => {
 
 
 });
+

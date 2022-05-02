@@ -175,7 +175,7 @@ header{
 
 /* Showcase */
 .showcase{
-    height: 100vh;
+    
     width: 80%;
     margin: 30px auto;
 
@@ -183,7 +183,6 @@ header{
 .showcase-container{
     display: flex;
     flex-wrap: wrap;
-    /* column-gap: 20px; */
     justify-content: space-evenly;
     row-gap: 20px;
 
@@ -209,6 +208,7 @@ header{
     width: 100vw;
     background-color: var(--hover-bg);
     padding: 50px;
+    
 }
 .vision h3{
     font-size: 1.6em;
@@ -221,9 +221,27 @@ header{
 /* sections */
 
 section{
+    /* display: flex; */
+    width: 80%;
+    margin: 50px auto;
+}
+.content-container{
     display: flex;
-    height: 100vh;
-    
+    column-gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+   
+}
+.content-container img{
+    max-width: 300px;
+}
+.text-content{
+    padding: 20px;
+    font-size: 1.3em;
+   background-color: var(--light-blue);
+   line-height: 2;
+   
 }
 
 /* Footer */
