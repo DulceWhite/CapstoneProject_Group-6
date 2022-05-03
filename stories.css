@@ -21,25 +21,64 @@ body{
     font-family: 'Saira Condensed', sans-serif;
 }
 
-.bread{
+.mark{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    list-style: none;
+    padding: 20px;
+    font-family: 'Alfa Slab One', cursive;
+    width: 80%;
+    margin: auto;
+}
+.mark h1{
+    letter-spacing: 3px;
+    font-size: 48px;
+
+}
+.quick-btn{
+    display: flex;
+    /* flex-direction: column; */
+
+}
+.btn{
+    background-color: var(--btn);
+    padding: 12px 8px;
+    text-transform: uppercase;
+    border: none;
+    margin: 10px;
+    color: #fff;
+}
+
+
+.btn:hover{
+    color: var(--btn);
+    background-color: transparent;
+    border: var(--btn) 2px solid;
+    transition: all .28s ease-in-out;
+}
+.breadcrumbs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--title);
     width: 100%;
     height: 80px;
-    position: fixed;
+    position: sticky;
     top: 0;
     margin-top: 0;
-    padding-right: 15px;
-    z-index: 99;
- 
+    padding: 0 20px;
+    
+    
 }
-.bread h1{
+.bread{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.breadcrumbs h1{
     color: var(--light-blue);
-    position: fixed;
-    left: 50px;
+    letter-spacing: 3px;
 
 }
 .bread li{
@@ -54,6 +93,7 @@ body{
     
 }
 
+.bread li:nth-child(2)::before,
 .bread li:nth-child(3)::before,
 .bread li:nth-child(4)::before{
     content: '>';
@@ -65,8 +105,7 @@ body{
 
 /* Cards content */
 .content-container{
-    position: relative;
-    top: 90px;
+    margin-top: 40px;
     line-height: 2;
     background-position: center;
     background-repeat: no-repeat;
