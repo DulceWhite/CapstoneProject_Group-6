@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link to fontawesome -->
     <script src="https://kit.fontawesome.com/d58efc4567.js" crossorigin="anonymous"></script>
+    <!-- link to swiperjs -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <!-- Link to CSS -->
-    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="style.css">
     <title>Flood Talk</title>
 </head>
 
@@ -19,9 +21,6 @@
             <button class="btn">Subscribe</button>
             <a href="./form.html"><button class="btn">Get Help Now</button></a>
             <button class="btn">Donate</button>
-            <!-- <label for="search"><i class="fa-solid fa-magnifying-glass"></i> -->
-            <!-- <input type="search" id="search"> -->
-            <!-- </label> -->
         </div>
     </div>
     <header>
@@ -42,7 +41,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="a-parent"><i class="fa-solid fa-puzzle-piece"></i><a href="#">Take Action</a>
+                    <li class="a-parent"><i class="fa-solid fa-puzzle-piece"></i><a href="./takeAction.html">Take Action</a>
                         <div class="submenu-1">
                             <ul>
                                 <li><a href="form.html">Tell Your Story</a></li>
@@ -54,7 +53,7 @@
                     <li class="a-parent"><i class="fa-solid fa-list-check"></i><a href="#">Resources</a>
                         <div class="submenu-1">
                             <ul>
-                                <li><a href="#">Information</a></li>
+                                <li><a href="info.html">Information</a></li>
                                 <li><a href="#">Contacts</a>
                                     <ul class="sub-submenu">
                                         <li><a href="./Contacts/rcont.html">General</a></li>
@@ -64,8 +63,6 @@
                                 </li>
                             </ul>
                         </div>
-                    </li>
-                    <li class="a-parent"><i class="fa-solid fa-tv"></i><a href="media.html">Flood Media</a>
                     </li>
             </div>
     
@@ -78,33 +75,70 @@
 
     
 <!-- Showcase -->
-<div class="showcase">
-<div class="showcase-container">
-    <!-- !I will use the same picture but it needs to be updated -->
-    <div class="imgShowcase">
-        <img src="Img/flood.jpeg" alt="">
+<div class="slider">
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="SlideImages/1_Western_Campus_5.5in_rainfall.png" alt=""></div>
+            <div class="swiper-slide"><img src="SlideImages/2_Beech_Bend_2-28-21.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="SlideImages/3_BeechBend2_5-3-10.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="SlideImages/4_BeechBend_5-3-10.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="SlideImages/5_Warren-Barrencoline_9-1-17.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="SlideImages/6_Weather_Stone2_3-3-2021.png" alt=""></div>
+            <div class="swiper-slide"><img src="SlideImages/7_Weather_Stone_3-3-2021.png" alt=""></div>
+            
+            
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        
     </div>
-    <div class="imgShowcase">
-        <h2>Find Your Voice, Floods need action! </h2>
-    </div>
-    <div class="imgShowcase">
-        <img src="Img/flood.jpeg" alt="">
-    </div>
-    <div class="imgShowcase">
-        <img src="Img/flood.jpeg" alt="">
-    </div>
-</div>
-
 </div>
 
 <div class="vision">
     <h3>Flood Talk recognizes the severity of floods in our community and the damaged caused. Our goal is to increase awareness of flooding , provide additional flood related resources, and provide a public platform to voice concerns in order to promote lasting solutions.</h3>
 </div>
+<section class="sec1">
+    <div class="quick-links">
+      <h1>Take Action!</h1>
+      <p>We invite you to be an active participant and help bring solutions to this devastating problem by sharing your story. If you are witness or victim to flood issues</p>
+      <h1 class="links"><i class="fa-solid fa-bullhorn"></i>
+      <a href="./form.html">Tell Your Story</a></h1>
+    
+    </div>
+    <div class="quick-links">
+      <h1>Read Flood Stories</h1>
+      <p>You are not alone. Kentuckians are affected by floods every year. Here you will find the stories shared by people like you, who had to navigate the hardships and aftermath of this event. </p>
+     <h1 class="links"><i class="fa-solid fa-house-flood-water"></i> <a href="./stories.html">Flood Stories</a></h1>
+    
+    </div>
+</section>
 
-    <section>
-       <div class="content-container">
-           <img src="Img/stateFlag.png" alt="">
-           <p class="text-content">According to the <a href="https://www.courier-journal.com/story/weather/local/2021/10/15/kentucky-flood-risk-among-highest-united-states-report-finds/6093812001/">Courier Journal</a> Kentucky has some of the highest concentrations of community flood risk in the country, according to a report. <br>
+<section class="sec-video">
+    <div class="video-container">
+        <div class="video1">
+            <iframe src="https://www.youtube.com/embed/5JUsYrjg6xU?playlist=5JUsYrjg6xU&loop=1" width="520" height="415"></iframe>
+        </div>
+    </div>
+    <div class="video-container">
+        <div class="video1">
+            <iframe width="520" height="415"
+            src="https://www.youtube.com/embed/Lv4IYZu-A3s?playlist=Lv4IYZu-A3s&loop=1">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+    <section class="sec2">
+        <h1>News</h1>
+        <div class="content-container">
+           <a href="https://www.courier-journal.com/story/weather/local/2021/10/15/kentucky-flood-risk-among-highest-united-states-report-finds/6093812001/"><img src="Img/stateFlag.png" alt=""></a>
+           <p class="text-content">According to <a href="https://www.courier-journal.com/story/weather/local/2021/10/15/kentucky-flood-risk-among-highest-united-states-report-finds/6093812001/">Corurier Journal</a> <b>Kentucky has some of the highest concentrations of community flood risk in the country. <br></b>
 
             Almost 249,000 properties in the commonwealth "have greater than a 26% chance of being severely affected by flooding over the next 30 years," the "Third National Flood Risk Assessment" says. That's about 13% of all properties statewide, putting Kentucky in the top four of all states in terms of flood risk. <a href="https://www.courier-journal.com/story/weather/local/2021/10/15/kentucky-flood-risk-among-highest-united-states-report-finds/6093812001/">Read the article.</a>
             
@@ -134,11 +168,11 @@
     <footer>
         <div class="navlinks">
             <ul>
-                <li><a href="">Flood Media</a></li>
-                <li><a href="">Resources</a></li>
-                <li><a href="">Take Action</a></li>
+                <li><a href="./media.html">Flood Media</a></li>
+                <li><a href="./Contacts/rcont.html">Resources</a></li>
+                <li><a href="./form.html">Take Action</a></li>
                 <li><a href="">About</a></li>
-                <li><a href="./index3.html">Home</a></li>
+                <li><a href="./index.html">Home</a></li>
             </ul>
         </div>
         <div class="donate">
@@ -165,7 +199,7 @@
                 <br>
                 Monday - Friday
                 <br>
-                8 a.m. – 4:30 p.m.
+                8:00 a.m. – 4:30 p.m.
             </p>
             <br>
             <p><a href="./LegalSpeak/privacy.html">Private Policy</a></p>
@@ -178,8 +212,33 @@
         Shawntay Smith.
     </div>
 
+        <!-- Script src to swiperjs -->
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+        <script>
+            const swiper = new Swiper('.swiper', {
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                
+                loop: true,
+    
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+    
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+
     <!-- Script src for JS -->
     <script src="app2.js"></script>
+
 </body>
 
 </html>
