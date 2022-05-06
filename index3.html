@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link to fontawesome -->
     <script src="https://kit.fontawesome.com/d58efc4567.js" crossorigin="anonymous"></script>
+    <!-- link to swiperjs -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <!-- Link to CSS -->
     <link rel="stylesheet" href="style3.css">
     <title>Flood Talk</title>
@@ -55,7 +57,7 @@
                     <li class="a-parent"><i class="fa-solid fa-list-check"></i><a href="#">Resources</a>
                         <div class="submenu-1">
                             <ul>
-                                <li><a href="#">Information</a></li>
+                                <li><a href="info.html">Information</a></li>
                                 <li><a href="#">Contacts</a>
                                     <ul class="sub-submenu">
                                         <li><a href="#">Emergency</a></li>
@@ -65,8 +67,6 @@
                                 </li>
                             </ul>
                         </div>
-                    </li>
-                    <li class="a-parent"><i class="fa-solid fa-tv"></i><a href="media.html">Flood Media</a>
                     </li>
             </div>
     
@@ -79,23 +79,29 @@
 
     
 <!-- Showcase -->
-<div class="showcase">
-<div class="showcase-container">
-    <!-- !I will use the same picture but it needs to be updated -->
-    <div class="imgShowcase">
-        <img src="Img/flood.jpeg" alt="">
+<div class="slider">
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="SlideImages/1_Western_Campus_5.5in_rainfall.png" alt=""></div>
+            <div class="swiper-slide"><img src="SlideImages/2_Beech_Bend_2-28-21.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="SlideImages/3_BeechBend2_5-3-10.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="SlideImages/4_BeechBend_5-3-10.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="SlideImages/5_Warren-Barrencoline_9-1-17.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="SlideImages/6_Weather_Stone2_3-3-2021.png" alt=""></div>
+            <div class="swiper-slide"><img src="SlideImages/7_Weather_Stone_3-3-2021.png" alt=""></div>
+            
+            
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        
     </div>
-    <div class="imgShowcase">
-        <h2>Find Your Voice, Floods need action! </h2>
-    </div>
-    <div class="imgShowcase">
-        <img src="Img/flood.jpeg" alt="">
-    </div>
-    <div class="imgShowcase">
-        <img src="Img/flood.jpeg" alt="">
-    </div>
-</div>
-
 </div>
 
 <div class="vision">
@@ -179,8 +185,33 @@
         Shawntay Smith.
     </div>
 
+        <!-- Script src to swiperjs -->
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+        <script>
+            const swiper = new Swiper('.swiper', {
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                
+                loop: true,
+    
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+    
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+
     <!-- Script src for JS -->
     <script src="app2.js"></script>
+
 </body>
 
 </html>
