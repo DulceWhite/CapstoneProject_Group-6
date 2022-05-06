@@ -216,24 +216,71 @@ header{
     margin: auto;
     text-transform: uppercase;
 }
+/* Section 1  */
 
+.sec1{
+    display: flex;
+    column-gap: 50px;
+}
+.quick-links{
+    background-color: var(--banner);
+    padding: 15px 25px;
+    line-height: 2;
+    box-shadow: 8px 8px 12px rgba(0,0,0,.6);
+}
+.quick-links h1{
+    font-size: 2.5em;
+    letter-spacing: 5px;
+    text-align: center;
+}
+.quick-links p{
+    font-size: 1.3em;
+    text-align: justify;
+}
+.links{
+   background-color: var(--mud-brown);
+   color: var(--light-blue);
+   text-align: center;
+   margin: 20px 0;
+   cursor: pointer;
+   border-radius: 15px;
+}
+.links a{
+    font-size: .8em;
+    text-decoration: none;
+    color: var(--light-blue);
+}
+/* Videos */
 
-/* sections */
+.sec-video{
+    display: flex;
+    justify-content: space-around;
+}
+/* sections 2 */
+
 
 section{
-    /* display: flex; */
     width: 80%;
-    margin: 50px auto;
+    margin: 80px auto;
+}
+.sec2{
+    margin: 100px auto;
+    border-top: dotted 5px var(--btn);
+}
+.sec2 h1{
+    font-size: 3em;
+    letter-spacing: 5px;
+    text-align: center;
 }
 .content-container{
     display: flex;
     column-gap: 50px;
     justify-content: center;
     align-items: center;
-    margin: 50px 0;
-   
+    margin: 100px 0;
 }
 .content-container img{
+    box-shadow: 8px 8px 12px rgba(0,0,0,.6);
     max-width: 300px;
 }
 .text-content{
@@ -247,10 +294,11 @@ section{
 /* Footer */
 
 footer {
-    height: 30%;
     background-color: var(--mud-brown);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0;
 }
 
 .navlinks ul li {
@@ -262,34 +310,34 @@ footer {
     color: azure;
     width: 100px;
     display:flex;
-    margin-left: 0;
     margin-top: 15px;
-    font-size: large;
+    font-size: 22px;
 }
 
 .donate {
     color: azure;
     width: 200px;
-    margin-top: 30px;
     font-size: 22px;
-}
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
 
-.donate .btn {
-    margin-top: 20px;
-    padding: 20px;
 }
 
 .logo-footer{
     color: var(--light-blue);
-    padding-top: 10px;
-    padding-bottom: 100px;
-    margin-top: 70px;
     font-size: 30px;
+    letter-spacing: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
 }
 
-.logo-talk {
-    margin-left: 50px;
-    margin-top: -10px;
+.logo-footer h1 {
+   margin: 0;
 }
 
 .address {
@@ -378,8 +426,6 @@ footer {
         
     }
 
-   
-    /* why check button is not taking the styling */
     #check:checked ~ label #menu{
         opacity: 1;
         color: black;
