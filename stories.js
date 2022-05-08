@@ -6,6 +6,7 @@ const btn = document.getElementById(`toggle`);
 btn.onclick = function () {
     if(fullStory.style.display !== "none"){
         fullStory.style.display = "none";
+        btn.innerText = "Read the complete story"
     }
     else{
         fullStory.style.display = "block";

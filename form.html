@@ -40,12 +40,15 @@
                 
         </div>
         <form >
-            <label for="name" class="label">Name 
-                <label for="first">First<input type="text" id="first" required></label>
-                <label for="last">Last<input type="text" id="last"></label>
-            </label>
+            <h1>Tell Your Story</h1>
+           
+            
+            <label for="first" class="label">First Name<input type="text" id="first" required></label>
+            <label for="last" class="label">Last Name<input type="text" id="last"></label>
+            
+            
             <label for="phone" class="label">
-                <label for="">Phone<input type="phone" id="phone"></label>
+                Phone<input type="phone" id="phone">
             </label>
             <label for="email" class="label" >
                 Email<input type="email" id="email" required>
@@ -57,7 +60,7 @@
                 Street Name<input type="street" id="street" ></label>
             </label>
             <label for="concern" class="label">
-                Tell your story...<textarea name="concern" id="concern" cols="30" rows="10"></textarea>
+                Tell your story...<textarea name="concern" id="concern" min-cols="30" min-rows="30" placeholder="Please describe the flood events, you can include images and videos too..."></textarea>
             </label>
             <label for="checkbox" class="radioLabel">
                 Would you like to add pictures?
