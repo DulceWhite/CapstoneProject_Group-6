@@ -75,7 +75,7 @@ header{
 
 .navbar ul{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     list-style: none;
 }
 
@@ -262,7 +262,6 @@ header{
 }
 /* sections 2 */
 
-
 section{
     width: 80%;
     margin: 80px auto;
@@ -391,6 +390,36 @@ footer {
         margin-left: 0;
         transition: all .6s ease-in-out;
     }
+
+    .sec1{
+       flex-direction: column;
+        row-gap: 50px;
+    }
+
+    .sec-video{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .content-container{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+/* Footer */
+    .navlinks ul li a {
+        font-size: 16px;
+    }
+    .donate {
+        font-size: 16px;
+    }
+    .logo-footer{
+        font-size: 18px;
+    }
+    .address {
+        font-size: 14px;
+    }
+
 
 }
 @media (max-width: 680px){
