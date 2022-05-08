@@ -385,13 +385,21 @@ footer {
 /* Media Queries */
 
 @media(max-width: 740px){
+    .mark{
+        padding: 0;
+        margin: 0;
+       width: 100%;
+    }
+    .mark h1{
+        width: 100%;
+        text-align: center;
+    }
     .quick-btn{
         flex-direction: column;
     
     }
     .navbar ul li:hover .submenu-1{
-       
-        top: 60px;
+        top: 30px;
         background: var(--title);
         box-shadow: 0 5px 15px rgba(0,0,0,.6);
         margin-top: 25px;
@@ -427,6 +435,9 @@ footer {
     .address {
         font-size: 14px;
     }
+    .donate{
+        display: none;
+    }
 
 
 }
@@ -436,7 +447,6 @@ footer {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        padding: 10px;
        line-height: 2; 
        position: sticky;
        top: 0;
@@ -444,6 +454,8 @@ footer {
     }
     .mark h1{
         font-size: 35px;
+         background-color: var(--title);
+        color: var(--light-blue);
     }
    
     .btn{
@@ -461,8 +473,8 @@ footer {
     #menu, #cancel{
         display: block;
         position: absolute;
-        top: 10px;
-        left: 10px;
+        top: 20px;
+        left: 15px;
         cursor: pointer;
         color: var(--light-blue);
         font-size: 1.3em;
@@ -477,7 +489,7 @@ footer {
 
     #check:checked ~ label #menu{
         opacity: 1;
-        color: black;
+        color: var(--light-blue);
         
     }
     #check:checked ~ label #cancel{
