@@ -60,6 +60,23 @@ body{
 
 
 /* Nav Bar */
+.breadcrumbs {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    background-color: var(--title);
+    width: 100%;
+    position: sticky;
+    top: 0%;
+    padding-right: 15px;
+    z-index: 2;
+}
+
+.breadcrumbs h1{
+    color: var(--light-blue);
+    
+}
 
 .bread{
     display: flex;
@@ -92,6 +109,7 @@ body{
     
 }
 
+.bread li:nth-child(2)::before,
 .bread li:nth-child(3)::before,
 .bread li:nth-child(4)::before{
     content: '>';
@@ -121,12 +139,13 @@ body{
 .pic {
     display: flex;
     flex-direction: column;
-    width: 30%;
     text-align: center;
     background-color: var(--banner);
     padding: 20px; 
     border-radius: 10%;
     box-shadow: 8px 8px 12px rgba(0,0,0,.6);
+    justify-content: center;
+    align-items: center;
 }
 
 .pic p {
@@ -138,7 +157,7 @@ body{
 }
 
 .container img{
-    height: 300px;
+    width: 300px;
     border-radius: 5%;
     padding-bottom: 5px;
 }
@@ -173,7 +192,7 @@ body{
 }
 .container .highRiskMap {
     margin-top: 10px;
-    height: 300px;
+    width: 500px;
     padding-bottom: 5px;
     
 }
@@ -370,5 +389,62 @@ footer {
     font-size: x-small;
     padding: 10px 0;
     text-align: center;
+
+}
+
+
+/* Media Queries */
+
+@media (max-width: 680px) {
+    .btn {
+        display: none;
+    }
+
+    #atten .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    .risk > .container{
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .bag{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    .bag > img {
+        width: 500px;
+    }
+
+    .pets {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 30px;
+        /* border: 2px red solid; */
+    }
+
+    /* Footer */
+    .navlinks ul li a {
+        font-size: 16px;
+    }
+    .donate {
+        display: none;
+    }
+    .logo-footer{
+        font-size: 18px;
+    }
+    .address {
+        font-size: 14px;
+    }
 
 }
