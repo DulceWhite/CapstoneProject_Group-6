@@ -10,6 +10,7 @@
     --dark-blue: #293241;
     --light-blue: #e0fbfc;
     --mud-brown: #403d39;
+    --banner: #f4d35e;
 }
 
 body{
@@ -34,8 +35,8 @@ body{
 .mark h1{
     letter-spacing: 3px;
     font-size: 48px;
-
 }
+
 .quick-btn{
     display: flex;
     /* flex-direction: column; */
@@ -79,12 +80,12 @@ body{
     position: absolute;
     left: 20%;
 }
+
 .bread li{
     padding-right: 10px ;
     font-size: 1.3em;
-    
-    
 }
+
 .bread li a{
     color: var(--light-blue);
     text-decoration: none;
@@ -103,29 +104,40 @@ body{
 /* Attention Grabber */
 
 #atten {
+    padding: 20px;
+    width: 80%;
+    margin: auto;
     margin-top: 5%;
     margin-bottom: 5%;
-    padding: 20px;
-    background-color: #81c3d7;
 }
 
 #atten .container {
     display:flex;
     justify-content: space-between;
+    column-gap: 100px;
+    
 }
 
 .pic {
     display: flex;
     flex-direction: column;
     width: 30%;
-    font-weight: bold;
     text-align: center;
-    background-color: #e0fbfc;
+    background-color: var(--banner);
     padding: 20px; 
     border-radius: 10%;
+    box-shadow: 8px 8px 12px rgba(0,0,0,.6);
 }
 
-img{
+.pic p {
+    font-size: 20px;
+}
+
+.pic p span {
+    font-weight: bold;
+}
+
+.container img{
     height: 300px;
     border-radius: 5%;
     padding-bottom: 5px;
@@ -134,22 +146,152 @@ img{
 /* High Risk */
 .risk {
     background-color: var(--title);
-    padding: 20px;
+    padding: 30px;
+    width: 95%;
+    margin: auto;
+    box-shadow: 8px 8px 12px rgba(0,0,0,.6);
 }
 
 .risk > .container {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-column-gap: 50px;
+    align-items: center;  
 }
 
-.risk .main-col {
+.risk h2 {
     color: var(--light-blue);
+    padding-bottom: 10px;
+    font-size: 45px;
 }
 
-.risk img{
-    margin-top: 10px;
+.risk p {
+    color: var(--light-blue);
+    font-size: 18px;
+    text-align: justify;
     
+}
+.container .highRiskMap {
+    margin-top: 10px;
+    height: 300px;
+    padding-bottom: 5px;
+    
+}
+.risk .main-col a{
+    text-decoration: none;
+    color: var(--btn);
+    font-weight: bold;
+}
+.risk .main-col a:hover{
+    text-decoration: underline;
+    color: var(--btn);
+}
+
+/* Prep */
+
+.prep {
+    width: 80%;
+    margin: 80px auto;
+}
+
+.head h1 {
+    font-size: 2.5em;
+    letter-spacing: 3px;
+    color: var(--btn);
+}
+
+.prep p {
+    font-size: 18px;
+    line-height: 2;
+    text-align: justify;
+    margin: 20px 0;
+}
+
+.prep a {
+    text-decoration: none;
+    color: var(--btn);
+    font-weight: bold;
+}
+
+.prep a:hover{
+    text-decoration: underline;
+    color: var(--btn);
+}
+.home {
+    display: flex;
+    column-gap: 30px;
+    margin: 20px;
+}
+
+.home p{
+    background-color: var(--light-blue);
+    padding: 20px;
+}
+
+.homeTitle {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 3px;
+    padding: 20px;
+    font-size: 20px;
+    background-color: var(--title);
+    color: var(--light-blue);
+    box-shadow: 8px 8px 12px rgba(0,0,0,.6);
+}
+
+.homeTitle i {
+    font-size: 50px;
+    margin: 20px;
+}
+
+.bag {
+    display: flex;
+    padding: 50px 0;
+    justify-content: space-around;
+    /* width: 50%; */
+}
+
+.bag img {
+    width: 50%;
+}
+
+.emBag {
+    /* margin: 30px auto; */
+    padding: 30px;
+    background-color: var(--banner);
+    box-shadow: 8px 8px 12px rgba(0,0,0,.6);
+}
+
+.pets{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+    align-items: center;   
+}
+
+.pets p {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: var(--light-blue);
+}
+
+.links {
+    width: 80%;
+    margin: 80px auto;
+    background-color: var(--title);
+    color: var(--light-blue);
+    text-align: center;
+    padding: 50px;
+    
+}
+
+.links img {
+    width: 200px;
+    height: 200px;
+    margin: 30px;
 }
 
 
@@ -173,6 +315,10 @@ footer {
     margin-left: 0;
     margin-top: 15px;
     font-size: large;
+}
+
+.navlinks ul li a:hover {
+    color: var(--hover-bg);
 }
 
 .donate {

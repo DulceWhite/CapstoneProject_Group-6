@@ -174,20 +174,24 @@ header{
 
 /* Showcase/Slider */
 .slider {
-    /* background-color: #27344b; */
-    width: 100%;
+    background-color: #27344b;
+    width: 80%;
     height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 50px;
     padding-bottom: 50px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 8px 8px 12px rgba(0,0,0,.6);
 }
 
 .swiper {
     width: 75%;
     height: 95%;
-    border: #7e7a7a 3px solid;
+    border: #7e7a7a 5px solid;
 }
 
 .swiper-slide img{
