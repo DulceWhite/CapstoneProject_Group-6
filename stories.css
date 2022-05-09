@@ -37,7 +37,6 @@ body{
 }
 .quick-btn{
     display: flex;
-    /* flex-direction: column; */
 
 }
 .btn{
@@ -272,6 +271,9 @@ footer {
     .quick-btn{
         flex-direction: column;
     
+    }
+    .quick-btn{
+        display: none;
     }
 
 
