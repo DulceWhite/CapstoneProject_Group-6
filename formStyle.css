@@ -282,13 +282,6 @@ footer {
 
 }
 
-@media (max-width: 680px){
-.bread h1{
-    color: var(--light-blue);
-    position: fixed;
-    left: 50px;
-
-}
 @media(max-width: 740px){
     .mark{
         padding: 0;
@@ -325,4 +318,16 @@ footer {
     }
 
 }
+
+
+@media (max-width: 680px){
+    .bread h1{
+        color: var(--light-blue);
+        position: fixed;
+        left: 50px;
+    
+    }
+    .quick-btn{
+        display: none;
+    }
 }
